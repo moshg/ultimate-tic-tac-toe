@@ -52,7 +52,7 @@
 /******/ 	function promiseResolve() { return Promise.resolve(); }
 /******/
 /******/ 	var wasmImportObjects = {
-/******/ 		"../pkg/ultimate_tic_tac_toe_wasm_bg.wasm": function() {
+/******/ 		"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm": function() {
 /******/ 			return {
 /******/
 /******/ 			};
@@ -142,7 +142,7 @@
 /******/
 /******/ 		// Fetch + compile chunk loading for webassembly
 /******/
-/******/ 		var wasmModules = {"0":["../pkg/ultimate_tic_tac_toe_wasm_bg.wasm"]}[chunkId] || [];
+/******/ 		var wasmModules = {"0":["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm"]}[chunkId] || [];
 /******/
 /******/ 		wasmModules.forEach(function(wasmModuleId) {
 /******/ 			var installedWasmModuleData = installedWasmModules[wasmModuleId];
@@ -152,7 +152,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"../pkg/ultimate_tic_tac_toe_wasm_bg.wasm":"a1903451e8237e10b80f"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm":"0efc8e311ccd338dd3cd"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
