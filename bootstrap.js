@@ -152,7 +152,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm":"5b95478d106d06c7e34e"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm":"c4e8782bd94ec8b1cc93"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
