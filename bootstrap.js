@@ -54,7 +54,44 @@
 /******/ 	var wasmImportObjects = {
 /******/ 		"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm": function() {
 /******/ 			return {
-/******/
+/******/ 				"./ultimate_tic_tac_toe_wasm.js": {
+/******/ 					"__wbindgen_object_drop_ref": function(p0i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbindgen_object_drop_ref"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_randomFillSync_1b52c8482374c55b": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_randomFillSync_1b52c8482374c55b"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_getRandomValues_1ef11e888e5228e9": function(p0i32,p1i32,p2i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_getRandomValues_1ef11e888e5228e9"](p0i32,p1i32,p2i32);
+/******/ 					},
+/******/ 					"__wbg_new_3a746f2619705add": function(p0i32,p1i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_new_3a746f2619705add"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_call_f54d3a6dadb199ca": function(p0i32,p1i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_call_f54d3a6dadb199ca"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_jsval_eq": function(p0i32,p1i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbindgen_jsval_eq"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_self_ac379e780a0d8b94": function(p0i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_self_ac379e780a0d8b94"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_crypto_1e4302b85d4f64a2": function(p0i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_crypto_1e4302b85d4f64a2"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_is_undefined": function(p0i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbindgen_is_undefined"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_getRandomValues_1b4ba144162a5c9e": function(p0i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_getRandomValues_1b4ba144162a5c9e"](p0i32);
+/******/ 					},
+/******/ 					"__wbg_require_6461b1e9a0d7c34a": function(p0i32,p1i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbg_require_6461b1e9a0d7c34a"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbindgen_throw": function(p0i32,p1i32) {
+/******/ 						return installedModules["../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm.js"].exports["__wbindgen_throw"](p0i32,p1i32);
+/******/ 					}
+/******/ 				}
 /******/ 			};
 /******/ 		},
 /******/ 	};
@@ -152,7 +189,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm":"f8811955e38f2ff39e1b"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"../ultimate-tic-tac-toe-wasm/pkg/ultimate_tic_tac_toe_wasm_bg.wasm":"c878a9c8c7bcfb9310bb"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
@@ -253,7 +290,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// A dependency graph that contains any wasm must all be imported\n// asynchronously. This `bootstrap.js` file does the single async import, so\n// that no one else needs to worry about it again.\n__webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./index.js */ \"./index.js\"))\n  .catch(e => console.error(\"Error importing `index.js`:\", e));\n\n\n//# sourceURL=webpack:///./bootstrap.js?");
+eval("// A dependency graph that contains any wasm must all be imported\r\n// asynchronously. This `bootstrap.js` file does the single async import, so\r\n// that no one else needs to worry about it again.\r\n__webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./index.js */ \"./index.js\"))\r\n  .catch(e => console.error(\"Error importing `index.js`:\", e));\r\n\n\n//# sourceURL=webpack:///./bootstrap.js?");
 
 /***/ })
 
